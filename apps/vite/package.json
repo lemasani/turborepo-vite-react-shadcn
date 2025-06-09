@@ -17,11 +17,11 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.5.0",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.1",
     "globals": "^16.2.0",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.33.0",
+    "typescript-eslint": "^8.33.1",
     "vite": "^6.3.5"
   }
 }
