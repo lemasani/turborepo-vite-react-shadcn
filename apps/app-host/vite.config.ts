@@ -5,6 +5,9 @@ import path from "node:path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    port: 5174, // port for the app host
+  },
   resolve: {
     alias: {
       "@repo/ui": path.resolve(__dirname, "../../packages/ui/src"),
