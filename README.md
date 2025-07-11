@@ -1,4 +1,4 @@
-# 🚀 Turborepo starter with shared shadcn/ui components (Vite, Next.js). Tailwind 4 support.
+# 🚀 Turborepo starter with shared shadcn/ui components (Vite). Tailwind 4 support.
 
 [![Build](https://github.com/evgenius1424/turborepo-vite-shadcn-ui/actions/workflows/build.yml/badge.svg)](https://github.com/evgenius1424/turborepo-vite-shadcn-ui/actions/workflows/build.yml)
 [![Update Dependencies](https://github.com/evgenius1424/turborepo-vite-shadcn-ui/actions/workflows/update-dependencies.yml/badge.svg)](https://github.com/evgenius1424/turborepo-vite-shadcn-ui/actions/workflows/update-dependencies.yml)
@@ -22,8 +22,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/evgenius1424/turborepo-vite-shadcn-ui.git
-   cd turborepo-vite-shadcn-ui
+   git clone https://github.com/lemasani/turborepo-vite-react-shadcn.git
+   cd turborepo-vite-react-shadcn
    ```
 
 2. Install dependencies using `pnpm`:
