@@ -1,37 +1,28 @@
-
 import "@repo/ui/styles/globals.css";
-
-import { Button } from "@repo/ui/components/button";
-
-import { Card, CardContent } from "@repo/ui/components/card";
-import { useState } from "react";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RootLayout from "./layout/RootLayout";
+import Home from "./pages/Home";
+import Login from "./pages/login";
+import Module1 from "./pages/module1";
+import Module2 from "./pages/module2";
+import Module3 from "./pages/module3";
 
 function App() {
-
- const [count, setCount] = useState(0);
   return (
-    <>
-     <div className="container mx-auto p-4 space-y-4">
-      <h1 className="text-xl font-bold mb-2">This is the app host app built with Vite React</h1>
-      <p className="mb-4">
-        This shadcn/ui button is shared between Vite any other
-        application.
-      </p>
-      <Button onClick={() => setCount((count) => count + 1)}>
-        Count is {count}
-      </Button>
-
-      <Card>
-        <CardContent>
-          <h2 className="text-lg font-semibold mb-2">Card Component</h2>
-          <p>This is a card component from the shared UI library.</p>
-        </CardContent>
-      </Card>
-    </div>
-    </>
-
-  )
+    <Router>
+      <Routes>
+        {/* Login route without RootLayout */}
+        <Route path="/login" element={<Login />} />
+         {/* All other routes with RootLayout */}
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="module1" element={<Module1 />} />
+          <Route path="module2" element={<Module2 />} />
+          <Route path="module3" element={<Module3 />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
